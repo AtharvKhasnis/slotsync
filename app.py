@@ -16,6 +16,7 @@ app = Flask(__name__)
 
 COMMIT = (os.getenv("RENDER_GIT_COMMIT") or os.getenv("GIT_SHA") or "local")[:7]
 
+
 def _selected_date():
     """Date the user is looking at, defaulting to today."""
     raw = request.args.get("date", "").strip()
