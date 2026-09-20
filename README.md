@@ -152,7 +152,7 @@ The deploy hook URL is never in the repository — it is stored as the GitHub se
 Render sets `RENDER_GIT_COMMIT` automatically; the app reads it (falling back to the
 `GIT_SHA` build argument used by the Docker image) and prints the first 7 characters
 in the footer.
-
+  
 ## Notes
 
 Bookings are held in memory, so a Render restart clears them. That is intentional for
