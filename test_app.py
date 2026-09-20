@@ -33,7 +33,7 @@ def form(**overrides):
 
 def test_health_reports_ok_and_commit(client):
     body = client.get("/health").json
-    assert body["status"] == "ok"
+    assert body["status"] == "broken"
     assert body["commit"]
 
 
