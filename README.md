@@ -158,3 +158,4 @@ in the footer.
 Bookings are held in memory, so a Render restart clears them. That is intentional for
 this assessment — the focus is the pipeline, not persistence. Swapping `store.py` for a
 SQLite or Postgres backend would not change any route or test signature.
+       
